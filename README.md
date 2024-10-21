@@ -1,0 +1,1 @@
+Dicoding event application is an application that displays events from dicoding. The event data is obtained through the dicoding event API. And this application is a submission of the Android Developer learning path.
