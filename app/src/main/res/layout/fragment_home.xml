@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        tools:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/titleEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dicoding_event"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/text_upcoming_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below = "@+id/titleEvent"
+                android:text="@string/up_coming_event"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/icon_upcoming_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below = "@+id/titleEvent"
+                android:layout_toEndOf="@id/text_upcoming_event"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/baseline_event_24" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvupcomingevent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_upcoming_event"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/text_past_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/past_event"
+                android:textSize="16sp"
+                android:layout_below="@id/rvupcomingevent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/icon_past_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rvupcomingevent"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/text_past_event"
+                android:src="@drawable/baseline_event_available_24" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvpastEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_past_event"
+                android:layout_marginTop="8dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

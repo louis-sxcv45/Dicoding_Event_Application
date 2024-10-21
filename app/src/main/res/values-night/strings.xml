@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="registrasi">Registrasi</string>
+    <string name="past_event">Past Event ✔</string>
+    <string name="up_coming_event">Up Coming Event 🔥</string>
+    <string name="dicoding_event">Dicoding Event</string>
+</resources>
